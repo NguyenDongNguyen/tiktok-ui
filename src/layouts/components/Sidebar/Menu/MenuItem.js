@@ -7,6 +7,7 @@ const cx = classNames.bind(styles);
 
 function MenuItem({ title, to, icon, activeIcon }) {
     return (
+        // custom 1 active chỉ dùng đc vs NavLink (xem thêm ghi chú ở F8)
         <NavLink className={(nav) => cx('menu-item', { active: nav.isActive })} to={to}>
             <span className={cx('icon')}>{icon}</span>
             <span className={cx('active-icon')}>{activeIcon}</span>
